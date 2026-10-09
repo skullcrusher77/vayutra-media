@@ -294,5 +294,5 @@ if __name__ == "__main__":
     stories = spec.get("stories", [])[:3]
     for i, s in enumerate(stories, 1): render_story(s, os.path.join(out, f"story{i}.jpg"))
     render_story_videos(out, len(stories), spec)
-    render_reel(spec["reel"], out, spec)
+    if spec.get("reel"): render_reel(spec["reel"], out, spec)
     print("rendered:", sorted(os.listdir(out)))
