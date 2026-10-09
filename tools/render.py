@@ -12,12 +12,15 @@ Spec format (all text fields plain strings, keep them short):
               "items": [["01", "Bhubaneswar", "Heritage walk & team challenges"], ...]},   # 3-6 items
   "reel":    {"scenes": [{"kicker": "DAY 1", "big": ["Bhubaneswar"], "small": "Heritage walk"}, ...],  # 4-8 scenes
               "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "Age 10+ · 6 days / 5 nights", "cta": "DM us “ODISHA”"}},
+  "music":   {"seed": "2026-10-10", "mood": "upbeat"},   # optional; mood: upbeat | chill | festive
   "stories": [{"kicker": "PARENTS ASK US", "big": ["Is it safe?"], "accent": "", "body": "",
                "bullets": ["24x7 supervision", ...], "cta": "Questions? DM us"}, ...]          # 2-3 stories
 }
 Only the Poppins font is available: avoid arrows and unusual symbols (write "to" instead of "→").
 """
 import json, os, subprocess, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import music
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -176,7 +179,26 @@ def reel_frame(sc, end=False):
     return im
 
 
-def render_reel(r, out):
+def music_track(out, name, seconds, spec):
+    m = spec.get("music", {})
+    path = os.path.join(out, f"_{name}.wav")
+    music.make(path, seconds, f"{m.get('seed', out)}-{name}", m.get("mood", "upbeat"))
+    return path
+
+
+def render_story_videos(out, n, spec):
+    """Turn story images into 8-second vertical videos with a slow zoom and music."""
+    for i in range(1, n + 1):
+        img = os.path.join(out, f"story{i}.jpg"); wav = music_track(out, f"story{i}", 8, spec)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", img, "-i", wav, "-filter_complex",
+                        "[0:v]scale=1188:2112,zoompan=z='min(1+0.0008*on,1.06)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+                        ":d=240:s=1080x1920:fps=30,format=yuv420p,setsar=1[v]", "-map", "[v]", "-map", "1:a",
+                        "-t", "8", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-b:v", "2000k", "-c:a", "aac", "-b:a", "128k",
+                        "-movflags", "+faststart", os.path.join(out, f"story{i}.mp4")], check=True)
+        os.remove(wav)
+
+
+def render_reel(r, out, spec=None):
     tmp = os.path.join(out, "_reel"); os.makedirs(tmp, exist_ok=True)
     scenes = r["scenes"][:8]
     for i, sc in enumerate(scenes): sc["_t"] = i / max(1, len(scenes) - 1)
@@ -189,17 +211,20 @@ def render_reel(r, out):
         inputs += ["-i", os.path.join(tmp, f"s{i}.png")]
         fc.append(f"[{i}:v]scale=1188:2112,zoompan=z='min(1+0.0015*on,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
                   f":d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{i}]")
+    total = (dur - fade) * (len(frames) - 1) + dur + last_extra
+    wav = music_track(out, "reel", total, spec or {})
     prev, offset = "v0", dur - fade
     for i in range(1, len(frames)):
         fc.append(f"[{prev}][v{i}]xfade=transition=fade:duration={fade}:offset={offset:.2f}[x{i}]")
         prev = f"x{i}"; offset += dur - fade
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + inputs + [
-        "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
+        "-i", wav,
         "-filter_complex", ";".join(fc), "-map", f"[{prev}]", "-map", f"{len(frames)}:a", "-shortest",
         "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-b:v", "2500k",
         "-maxrate", "3000k", "-bufsize", "6000k", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
         os.path.join(out, "reel.mp4")], check=True)
     frames[-1].convert("RGB").save(os.path.join(out, "reel_cover.jpg"), quality=92)
+    os.remove(wav)
     for f in os.listdir(tmp): os.remove(os.path.join(tmp, f))
     os.rmdir(tmp)
 
@@ -207,6 +232,8 @@ def render_reel(r, out):
 if __name__ == "__main__":
     spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
     render_post(spec["post"], out)
-    for i, s in enumerate(spec["stories"][:3], 1): render_story(s, os.path.join(out, f"story{i}.jpg"))
-    render_reel(spec["reel"], out)
+    stories = spec["stories"][:3]
+    for i, s in enumerate(stories, 1): render_story(s, os.path.join(out, f"story{i}.jpg"))
+    render_story_videos(out, len(stories), spec)
+    render_reel(spec["reel"], out, spec)
     print("rendered:", sorted(os.listdir(out)))

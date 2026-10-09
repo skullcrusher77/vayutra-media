@@ -48,6 +48,9 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    - reel: 4–7 scenes with short punchy lines (max ~4 words per big line), plus the end card with a DM keyword CTA
    - post: kicker, a 1–2 line title, subtitle, 3–6 items
    - stories: 2 or 3 (question or poll-style hook, facts, or a CTA story)
+   - Add `"music": {"seed": "D", "mood": "upbeat"}`. Mood: "chill" for sunrise, reflection or safety themes,
+     "festive" on festival days, otherwise "upbeat". The renderer synthesises an original track (no copyright risk)
+     for the reel and every story.
    - Use only Poppins-safe characters: no arrows or rare symbols ("to" instead of "→"). Keep every line short.
 3. Render: `python3 tools/render.py specs/D.json media/D`. Then open `post.jpg`, every `story*.jpg` and a frame of
    `reel.mp4` (`ffmpeg -ss 3 -i media/D/reel.mp4 -frames:v 1 /tmp/f.jpg`) with the Read tool and check that no text
@@ -58,7 +61,8 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    - Reel: `instagram_post_ig_user_media` with media_type REELS, video_url `.../reel.mp4`, cover_url `.../reel_cover.jpg`,
      share_to_feed true, caption; then `instagram_post_ig_user_media_publish` (max_wait_seconds 180).
    - Feed post: image_url `.../post.jpg` + caption, then publish.
-   - Each story: media_type STORIES, image_url `.../storyN.jpg`, then publish (one call per story, not the bulk form).
+   - Each story: media_type STORIES, video_url `.../storyN.mp4` (8 s with music), then publish with max_wait_seconds
+     120; one call per story, not the bulk form. If a story video fails twice, fall back to image_url `.../storyN.jpg`.
    - **If a publish call returns an error, check `instagram_get_ig_user_media` (and stories) before retrying.**
      Publishes often succeed despite a "temporarily unavailable" error. Never publish the same item twice.
 6. Captions: hook line first; 3–6 short lines; max 3 emoji; end with one action (comment a keyword / DM us /
