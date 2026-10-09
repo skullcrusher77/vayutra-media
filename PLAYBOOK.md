@@ -1,7 +1,7 @@
 # Vayutra daily Instagram playbook
 
 This repository holds the brand assets, the renderer and every day's media for the Instagram account **@vayutra.in**.
-A scheduled task follows this playbook once a day to publish **1 reel, 1 feed post and 2–3 stories**, all about the
+Scheduled tasks follow this playbook three times a day to publish **3 reels, 1 feed post and 3 stories**, all about the
 **Odisha Experience**. Files in `media/` are public, because Instagram downloads them from raw.githubusercontent.com.
 
 ## Brand facts (only use these; never invent anything else)
@@ -44,37 +44,55 @@ Outside the calendar's dates, pick the next theme not used in the last 10 days o
 Festival days override the theme with a greeting that still ties back to the program: Dussehra 20 Oct 2026,
 Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan, Republic Day 26 Jan.
 
-## Daily procedure
+## Daily schedule: three slots
 
-1. `cd` into the clone and `git pull`. Today's date in IST = D (YYYY-MM-DD). If `posted.log` already has a line for
-   D, or the account already has a feed post or reel with today's IST date, stop and only report.
-2. Write `specs/D.json` in the format documented at the top of `tools/render.py`, for the chosen theme:
+Each day has three runs, and each run is one **slot**:
+
+| Slot | Time (IST) | Publishes |
+|---|---|---|
+| morning | about 8:55 am | 1 reel + 1 story |
+| afternoon | about 12:55 pm | 1 reel + 1 story |
+| evening | about 6:47 pm | 1 reel + 1 feed post + 1 story |
+
+All three slots share the day's theme from `content/calendar.md`, but each reel takes a different angle:
+- **morning:** the hook, a bold question or a "did you know" about the theme
+- **afternoon:** the experience, what students actually do and see (day-by-day details)
+- **evening:** the call to action, why join, who it's for, DM or website
+
+Music: the three reels use three different styles (morning = calendar "Reel music", afternoon = "Story 1",
+evening = "Story 2"), and the slot's story uses "Story 3" in the morning, then any style not used by that slot's reel.
+Every asset gets its own seed (`"seed": "D-<slot>"`), so no track is ever repeated.
+
+## Procedure for one slot (D = today's IST date, S = slot)
+
+1. `cd` into the clone and `git pull`. If `posted.log` already has a line starting `D S |`, or the account already
+   shows this slot's reel (check `instagram_get_ig_user_media` for a reel published today in this slot's time window),
+   stop and only report.
+2. Write `specs/D-S.json` in the format documented at the top of `tools/render.py`:
    - reel: 4–7 scenes with short punchy lines (max ~4 words per big line), plus the end card with a DM keyword CTA
-   - post: kicker, a 1–2 line title, subtitle, 3–6 items
-   - stories: 2 or 3 (question or poll-style hook, facts, or a CTA story)
-   - Add `"music": {"seed": "D", "reel": <style>, "stories": [<style>, <style>, <style>]}` using the calendar row.
-     The renderer synthesises a new original track for every reel and story (seeded by date and asset), so no two
-     posts share music and there is no copyright risk.
+   - post: ONLY in the evening slot (kicker, a 1–2 line title, subtitle, 3–6 items); leave it out otherwise
+   - stories: exactly 1 (a question or poll-style hook in the morning, a fact in the afternoon, a CTA in the evening)
+   - `"music": {"seed": "D-S", "reel": <style>, "stories": [<style>]}` chosen as described above.
    - Use only Poppins-safe characters: no arrows or rare symbols ("to" instead of "→"). Keep every line short.
    - Real footage: list `library/photos/` and `library/clips/`. If files exist, use the ones whose file names match
-     today's theme: a `clip` on 1–3 reel scenes (with `clip_start` a few seconds in), a `bg` photo on the post and
-     on 1–2 stories. Prefer files not used in the last 7 days of `posted.log`. With no matching files, use the plain
-     illustrated scenes instead. Never download images or videos from the web; only use what is in `library/`.
-   - Illustrated scenes (always available): set `"scene"` on the post, on every story and on most reel scenes,
-     matching the theme: surf/SUP -> surf, beach; Chilika -> lake; Old Town -> oldtown, cycle; Sun Temple -> temple,
-     wheel; reflection or sunrise -> sunrise, beach; leadership or teamwork -> campfire, cycle; safety or FAQ -> beach,
-     lake; festivals -> night, campfire, temple. Vary the scenes across items on the same day.
-3. Render: `python3 tools/render.py specs/D.json media/D`. Then open `post.jpg`, every `story*.jpg` and a frame of
-   `reel.mp4` (`ffmpeg -ss 3 -i media/D/reel.mp4 -frames:v 1 /tmp/f.jpg`) with the Read tool and check that no text
+     today's theme: a `clip` on 1–3 reel scenes (with `clip_start` a few seconds in), a `bg` photo on the post or story.
+     Prefer files not used in the last 7 days of `posted.log`. With no matching files, use the illustrated scenes.
+     Never download images or videos from the web; only use what is in `library/`.
+   - Illustrated scenes (always available): set `"scene"` on the post, the story and most reel scenes, matching the
+     theme: surf/SUP -> surf, beach; Chilika -> lake; Old Town -> oldtown, cycle; Sun Temple -> temple, wheel;
+     reflection or sunrise -> sunrise, beach; leadership or teamwork -> campfire, cycle; safety or FAQ -> beach, lake;
+     festivals -> night, campfire, temple. Use different scenes from the day's earlier slots (see their specs).
+3. Render: `python3 tools/render.py specs/D-S.json media/D/S`. Open `post.jpg` (evening), `story1.jpg` and a frame of
+   `reel.mp4` (`ffmpeg -ss 3 -i media/D/S/reel.mp4 -frames:v 1 /tmp/f.jpg`) with the Read tool; check that no text
    overflows or overlaps and that the logo shows. Fix the spec and re-render if needed.
-4. Commit and push `specs/D.json` and `media/D/` to `main`.
-5. Media URL base: `https://raw.githubusercontent.com/skullcrusher77/vayutra-media/main/media/D/`.
+4. Commit and push `specs/D-S.json` and `media/D/S/` to `main`.
+5. Media URL base: `https://raw.githubusercontent.com/skullcrusher77/vayutra-media/main/media/D/S/`.
    Wait about 30 seconds after the push, then publish with the instgram connector (ig_user_id "me"):
    - Reel: `instagram_post_ig_user_media` with media_type REELS, video_url `.../reel.mp4`, cover_url `.../reel_cover.jpg`,
      share_to_feed true, caption; then `instagram_post_ig_user_media_publish` (max_wait_seconds 180).
-   - Feed post: image_url `.../post.jpg` + caption, then publish.
-   - Each story: media_type STORIES, video_url `.../storyN.mp4` (8 s with music), then publish with max_wait_seconds
-     120; one call per story, not the bulk form. If a story video fails twice, fall back to image_url `.../storyN.jpg`.
+   - Feed post (evening only): image_url `.../post.jpg` + caption, then publish.
+   - Story: media_type STORIES, video_url `.../story1.mp4` (8 s with music), then publish with max_wait_seconds 120.
+     If the story video fails twice, fall back to image_url `.../story1.jpg`.
    - **If a publish call returns an error, check `instagram_get_ig_user_media` (and stories) before retrying.**
      Publishes often succeed despite a "temporarily unavailable" error. Never publish the same item twice.
 6. Captions: hook line first; 3–6 short lines; max 3 emoji; end with one action (comment a keyword / DM us /
@@ -84,7 +102,7 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    #LearnToSurf #ExploreEngageEvolve #ParentsOfIndia #LearnBeyondClassroom`
    - Growth: at least every other caption also points to the website ("Full itinerary at vayutra.in/odisha-experience").
      Stories end with "Link in bio" or a DM keyword. Ask viewers to share or tag a friend in the reel caption.
-7. Append one line to `posted.log`: `D | theme | reel <media id> | post <media id> | stories <n> | music <reel>/<stories> | files <library files used>`,
+7. Append one line to `posted.log`: `D S | theme | reel <media id> | post <media id or -> | story <media id> | music <reel>/<story> | files <library files used>`,
    commit, push.
 8. Report to the owner in under 80 words: what was published, with permalinks, and anything that failed.
 

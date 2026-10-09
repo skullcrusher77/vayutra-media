@@ -1,6 +1,6 @@
 # 30-day content calendar (10 Oct to 8 Nov 2026)
 
-Each day: 1 reel, 1 feed post, 3 stories, published at 6:47 pm IST. Every reel and story gets its own newly generated track; the reel style never repeats on consecutive days.
+Each day: 3 reels (morning, afternoon, evening), 1 feed post (evening) and 3 stories (one per slot). Music: morning reel = Reel music, afternoon reel = Story 1, evening reel = Story 2; stories use Story 3 or another style not used by that slot's reel. Every reel and story gets its own newly generated track.
 
 | Date | Theme | Reel music | Story 1 | Story 2 | Story 3 |
 |---|---|---|---|---|---|

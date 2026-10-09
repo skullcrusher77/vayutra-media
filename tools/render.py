@@ -290,8 +290,8 @@ def render_reel(r, out, spec=None):
 if __name__ == "__main__":
     spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
     SEED["v"] = spec.get("music", {}).get("seed", out)
-    render_post(spec["post"], out)
-    stories = spec["stories"][:3]
+    if spec.get("post"): render_post(spec["post"], out)
+    stories = spec.get("stories", [])[:3]
     for i, s in enumerate(stories, 1): render_story(s, os.path.join(out, f"story{i}.jpg"))
     render_story_videos(out, len(stories), spec)
     render_reel(spec["reel"], out, spec)
