@@ -20,11 +20,14 @@ Spec format (all text fields plain strings, keep them short):
 Optional real footage (files in library/, see library/README.md):
   "bg": "library/photos/konark_beach.jpg"   on post, any story, or any reel scene -> photo background, darkened
   "clip": "library/clips/surf.mp4", "clip_start": 3   on a reel scene -> that video plays behind the text
+Illustrated backgrounds (always available, drawn by tools/scenes.py):
+  "scene": one of beach surf temple wheel lake oldtown sunrise cycle campfire night
+  on the post, any story or any reel scene. Use them on most items so posts look like real places.
 Only the Poppins font is available: avoid arrows and unusual symbols (write "to" instead of "→").
 """
 import json, os, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import music
+import music, scenes
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -87,8 +90,15 @@ def shade(w, h, darkness=0.55):
     return Image.fromarray(arr, "RGBA")
 
 
-def canvas(w, h, bg=None):
+SEED = {"v": "vayutra"}
+
+
+def canvas(w, h, bg=None, scene=None, dark=0.55):
     if resolve(bg): return photo_bg(resolve(bg), w, h)
+    if scene:
+        SEED["n"] = SEED.get("n", 0) + 1
+        art = scenes.draw(scene, w, h, f"{SEED['v']}-{SEED['n']}").convert("RGBA")
+        return Image.alpha_composite(art, shade(w, h, dark)).convert("RGB")
     im = Image.new("RGB", (w, h), BG)
     glow = Image.new("RGB", (w, h), BG); g = ImageDraw.Draw(glow)
     g.ellipse((-w * 0.3, -h * 0.15, w * 0.6, h * 0.35), fill=(40, 60, 90))
@@ -132,7 +142,7 @@ def footer(im, W, H):
 
 
 def render_post(p, out):
-    W, H = 1080, 1350; im = canvas(W, H, p.get("bg")); d = ImageDraw.Draw(im)
+    W, H = 1080, 1350; im = canvas(W, H, p.get("bg"), p.get("scene"), 0.66); d = ImageDraw.Draw(im)
     d.text((70, 90), p.get("kicker", ""), font=font("Medium", 44), fill=MUTED)
     y = 135
     for line in p["title"][:2]:
@@ -153,7 +163,7 @@ def render_post(p, out):
 
 
 def render_story(s, path):
-    W, H = 1080, 1920; im = canvas(W, H, s.get("bg")); d = ImageDraw.Draw(im)
+    W, H = 1080, 1920; im = canvas(W, H, s.get("bg"), s.get("scene")); d = ImageDraw.Draw(im)
     paste_logo(im, LOGO_MARK, 200, W / 2, 230)
     center(d, 360, s.get("kicker", ""), font("Medium", 38), grad(0.1), W)
     y = 560
@@ -185,7 +195,7 @@ def render_story(s, path):
 def reel_frame(sc, end=False, overlay=False):
     """overlay=True draws the text on a transparent shaded layer to put over a video clip."""
     W, H = 1080, 1920
-    im = shade(W, H, 0.45) if overlay else canvas(W, H, sc.get("bg"))
+    im = shade(W, H, 0.45) if overlay else canvas(W, H, sc.get("bg"), sc.get("scene"), 0.45)
     d = ImageDraw.Draw(im)
     if end:
         paste_logo(im, LOGO_FULL, 700, W / 2, 760)
@@ -279,6 +289,7 @@ def render_reel(r, out, spec=None):
 
 if __name__ == "__main__":
     spec = json.load(open(sys.argv[1])); out = sys.argv[2]; os.makedirs(out, exist_ok=True)
+    SEED["v"] = spec.get("music", {}).get("seed", out)
     render_post(spec["post"], out)
     stories = spec["stories"][:3]
     for i, s in enumerate(stories, 1): render_story(s, os.path.join(out, f"story{i}.jpg"))

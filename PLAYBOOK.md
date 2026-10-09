@@ -59,7 +59,11 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    - Real footage: list `library/photos/` and `library/clips/`. If files exist, use the ones whose file names match
      today's theme: a `clip` on 1–3 reel scenes (with `clip_start` a few seconds in), a `bg` photo on the post and
      on 1–2 stories. Prefer files not used in the last 7 days of `posted.log`. With no matching files, use the plain
-     brand design. Never download images or videos from the web; only use what is in `library/`.
+     illustrated scenes instead. Never download images or videos from the web; only use what is in `library/`.
+   - Illustrated scenes (always available): set `"scene"` on the post, on every story and on most reel scenes,
+     matching the theme: surf/SUP -> surf, beach; Chilika -> lake; Old Town -> oldtown, cycle; Sun Temple -> temple,
+     wheel; reflection or sunrise -> sunrise, beach; leadership or teamwork -> campfire, cycle; safety or FAQ -> beach,
+     lake; festivals -> night, campfire, temple. Vary the scenes across items on the same day.
 3. Render: `python3 tools/render.py specs/D.json media/D`. Then open `post.jpg`, every `story*.jpg` and a frame of
    `reel.mp4` (`ffmpeg -ss 3 -i media/D/reel.mp4 -frames:v 1 /tmp/f.jpg`) with the Read tool and check that no text
    overflows or overlaps and that the logo shows. Fix the spec and re-render if needed.
