@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-09-evening", "reel": "upbeat", "stories": ["cinematic"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "WHY JOIN?", "big": ["6 days.", "5 nights."], "small": "One unforgettable Odisha trip", "scene": "sunrise"},
+      {"kicker": "LEARN BY DOING", "big": ["Surf.", "Paddle."], "small": "Certified instructors, all gear included", "scene": "beach"},
+      {"kicker": "HERITAGE, LIVE", "big": ["Temples", "by cycle"], "small": "Old Town Bhubaneswar and Konark", "scene": "temple"},
+      {"kicker": "CHILIKA LAKE", "big": ["Learn", "outdoors"], "small": "Ecosystems, boat ride, teamwork", "scene": "lake"},
+      {"kicker": "WHO IT'S FOR", "big": ["Age 10+"], "small": "Students, schools, student groups", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "Direct booking open", "cta": "DM us \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "WHY JOIN",
+    "title": ["The Odisha", "Experience"],
+    "subtitle": "6 days / 5 nights / Age 10+",
+    "items": [
+      ["01", "Adventure", "Surfing and SUP with instructors"],
+      ["02", "Heritage", "Old Town cycle ride, Sun Temple"],
+      ["03", "Nature", "Chilika Lake ecosystem learning"],
+      ["04", "Growth", "Leadership, teamwork, confidence"],
+      ["05", "Safety", "24x7 supervision, parent updates"]
+    ],
+    "scene": "wheel"
+  },
+  "stories": [
+    {"kicker": "THE ODISHA EXPERIENCE", "big": ["Ready", "to go?"], "accent": "6 days / 5 nights / Age 10+",
+     "body": "Stays, meals, instructors, surf and SUP gear and local transport are all included.",
+     "cta": "DM us \"ODISHA\"", "scene": "cycle"}
+  ]
+}
