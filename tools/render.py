@@ -12,7 +12,8 @@ Spec format (all text fields plain strings, keep them short):
               "items": [["01", "Bhubaneswar", "Heritage walk & team challenges"], ...]},   # 3-6 items
   "reel":    {"scenes": [{"kicker": "DAY 1", "big": ["Bhubaneswar"], "small": "Heritage walk"}, ...],  # 4-8 scenes
               "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "Age 10+ · 6 days / 5 nights", "cta": "DM us “ODISHA”"}},
-  "music":   {"seed": "2026-10-10", "mood": "upbeat"},   # optional; mood: upbeat | chill | festive
+  "music":   {"seed": "2026-10-10", "reel": "tropical", "stories": ["lofi", "indian", "acoustic"]},
+             # styles: upbeat tropical lofi cinematic indian acoustic chill festive (see tools/music.py)
   "stories": [{"kicker": "PARENTS ASK US", "big": ["Is it safe?"], "accent": "", "body": "",
                "bullets": ["24x7 supervision", ...], "cta": "Questions? DM us"}, ...]          # 2-3 stories
 }
@@ -180,9 +181,15 @@ def reel_frame(sc, end=False):
 
 
 def music_track(out, name, seconds, spec):
+    """Each asset gets its own style + seed. spec["music"] = {"seed": D, "reel": style, "stories": [style, ...]}."""
     m = spec.get("music", {})
+    if name == "reel":
+        style = m.get("reel", m.get("mood", "upbeat"))
+    else:
+        idx = int(name.replace("story", "")) - 1; st = m.get("stories", [])
+        style = st[idx] if idx < len(st) else music.STYLES[(idx + 3) % len(music.STYLES)]
     path = os.path.join(out, f"_{name}.wav")
-    music.make(path, seconds, f"{m.get('seed', out)}-{name}", m.get("mood", "upbeat"))
+    music.make(path, seconds, f"{m.get('seed', out)}-{name}", style)
     return path
 
 

@@ -29,7 +29,11 @@ outdoor learning programs and student events, working with schools, colleges and
 **Never state** prices, batch dates, discounts, seat counts, student names, testimonials, quotes, statistics or awards.
 Price and date questions go to "DM us". Do not mention other companies or schools by name.
 
-## Theme rotation (pick the next theme not used in the last 10 days of `posted.log`)
+## Theme rotation
+
+**Use `content/calendar.md` first:** its row for today gives the theme and the music style for the reel and each story.
+Outside the calendar's dates, pick the next theme not used in the last 10 days of `posted.log`, and music styles
+(tools/music.py lists 8) that were not used the previous day.
 
 1. Full 6-day overview   2. Day 4 Konark surf and SUP   3. Chilika Lake   4. Old Town heritage cycle ride
 5. Sun Temple, Konark to Puri   6. Safety, for parents   7. What's included and how to book
@@ -48,9 +52,9 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    - reel: 4–7 scenes with short punchy lines (max ~4 words per big line), plus the end card with a DM keyword CTA
    - post: kicker, a 1–2 line title, subtitle, 3–6 items
    - stories: 2 or 3 (question or poll-style hook, facts, or a CTA story)
-   - Add `"music": {"seed": "D", "mood": "upbeat"}`. Mood: "chill" for sunrise, reflection or safety themes,
-     "festive" on festival days, otherwise "upbeat". The renderer synthesises an original track (no copyright risk)
-     for the reel and every story.
+   - Add `"music": {"seed": "D", "reel": <style>, "stories": [<style>, <style>, <style>]}` using the calendar row.
+     The renderer synthesises a new original track for every reel and story (seeded by date and asset), so no two
+     posts share music and there is no copyright risk.
    - Use only Poppins-safe characters: no arrows or rare symbols ("to" instead of "→"). Keep every line short.
 3. Render: `python3 tools/render.py specs/D.json media/D`. Then open `post.jpg`, every `story*.jpg` and a frame of
    `reel.mp4` (`ffmpeg -ss 3 -i media/D/reel.mp4 -frames:v 1 /tmp/f.jpg`) with the Read tool and check that no text
@@ -70,7 +74,10 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    `#Vayutra #OdishaExperience #Odisha #Konark #Chilika #Puri #Bhubaneswar #OdishaTourism #ExploreOdisha
    #StudentTravel #EducationalTrip #ExperientialLearning #OutdoorLearning #StudentLeadership #SurfingIndia
    #LearnToSurf #ExploreEngageEvolve #ParentsOfIndia #LearnBeyondClassroom`
-7. Append one line to `posted.log`: `D | theme | reel <media id> | post <media id> | stories <n>`, commit, push.
+   - Growth: at least every other caption also points to the website ("Full itinerary at vayutra.in/odisha-experience").
+     Stories end with "Link in bio" or a DM keyword. Ask viewers to share or tag a friend in the reel caption.
+7. Append one line to `posted.log`: `D | theme | reel <media id> | post <media id> | stories <n> | music <reel>/<stories>`,
+   commit, push.
 8. Report to the owner in under 80 words: what was published, with permalinks, and anything that failed.
 
 Do not follow, unfollow, like or DM other accounts.
