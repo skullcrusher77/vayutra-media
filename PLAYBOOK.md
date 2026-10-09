@@ -56,6 +56,10 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
      The renderer synthesises a new original track for every reel and story (seeded by date and asset), so no two
      posts share music and there is no copyright risk.
    - Use only Poppins-safe characters: no arrows or rare symbols ("to" instead of "→"). Keep every line short.
+   - Real footage: list `library/photos/` and `library/clips/`. If files exist, use the ones whose file names match
+     today's theme: a `clip` on 1–3 reel scenes (with `clip_start` a few seconds in), a `bg` photo on the post and
+     on 1–2 stories. Prefer files not used in the last 7 days of `posted.log`. With no matching files, use the plain
+     brand design. Never download images or videos from the web; only use what is in `library/`.
 3. Render: `python3 tools/render.py specs/D.json media/D`. Then open `post.jpg`, every `story*.jpg` and a frame of
    `reel.mp4` (`ffmpeg -ss 3 -i media/D/reel.mp4 -frames:v 1 /tmp/f.jpg`) with the Read tool and check that no text
    overflows or overlaps and that the logo shows. Fix the spec and re-render if needed.
@@ -76,7 +80,7 @@ Diwali 8 Nov 2026, Children's Day 14 Nov 2026, Christmas 25 Dec, New Year 1 Jan,
    #LearnToSurf #ExploreEngageEvolve #ParentsOfIndia #LearnBeyondClassroom`
    - Growth: at least every other caption also points to the website ("Full itinerary at vayutra.in/odisha-experience").
      Stories end with "Link in bio" or a DM keyword. Ask viewers to share or tag a friend in the reel caption.
-7. Append one line to `posted.log`: `D | theme | reel <media id> | post <media id> | stories <n> | music <reel>/<stories>`,
+7. Append one line to `posted.log`: `D | theme | reel <media id> | post <media id> | stories <n> | music <reel>/<stories> | files <library files used>`,
    commit, push.
 8. Report to the owner in under 80 words: what was published, with permalinks, and anything that failed.
 

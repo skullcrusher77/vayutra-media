@@ -17,6 +17,9 @@ Spec format (all text fields plain strings, keep them short):
   "stories": [{"kicker": "PARENTS ASK US", "big": ["Is it safe?"], "accent": "", "body": "",
                "bullets": ["24x7 supervision", ...], "cta": "Questions? DM us"}, ...]          # 2-3 stories
 }
+Optional real footage (files in library/, see library/README.md):
+  "bg": "library/photos/konark_beach.jpg"   on post, any story, or any reel scene -> photo background, darkened
+  "clip": "library/clips/surf.mp4", "clip_start": 3   on a reel scene -> that video plays behind the text
 Only the Poppins font is available: avoid arrows and unusual symbols (write "to" instead of "→").
 """
 import json, os, subprocess, sys
@@ -61,7 +64,31 @@ LOGO_FULL = keyed(_logo.crop((200, 130, 850, 830)))
 LOGO_MARK = keyed(_logo.crop((240, 150, 840, 700)))
 
 
-def canvas(w, h):
+def resolve(path):
+    if not path: return None
+    full = path if os.path.isabs(path) else os.path.join(ROOT, path)
+    return full if os.path.exists(full) else None
+
+
+def photo_bg(path, w, h, darkness=0.55):
+    """Cover-crop a photo to w x h and darken it so white text stays readable."""
+    ph = Image.open(path).convert("RGB"); sc = max(w / ph.width, h / ph.height)
+    ph = ph.resize((int(ph.width * sc) + 1, int(ph.height * sc) + 1), Image.LANCZOS)
+    l, t = (ph.width - w) // 2, (ph.height - h) // 2; ph = ph.crop((l, t, l + w, t + h))
+    return Image.alpha_composite(ph.convert("RGBA"), shade(w, h, darkness)).convert("RGB")
+
+
+def shade(w, h, darkness=0.55):
+    """Brand-tinted dark overlay, heavier at top and bottom where text and footer sit."""
+    import numpy as np
+    y = np.arange(h); edge = np.clip(1 - np.minimum(y, h - y) / (h * 0.35), 0, 1)
+    a = (255 * np.minimum(0.92, darkness + 0.3 * edge)).astype(np.uint8)
+    arr = np.zeros((h, w, 4), np.uint8); arr[..., 0], arr[..., 1], arr[..., 2] = 27, 26, 40; arr[..., 3] = a[:, None]
+    return Image.fromarray(arr, "RGBA")
+
+
+def canvas(w, h, bg=None):
+    if resolve(bg): return photo_bg(resolve(bg), w, h)
     im = Image.new("RGB", (w, h), BG)
     glow = Image.new("RGB", (w, h), BG); g = ImageDraw.Draw(glow)
     g.ellipse((-w * 0.3, -h * 0.15, w * 0.6, h * 0.35), fill=(40, 60, 90))
@@ -105,7 +132,7 @@ def footer(im, W, H):
 
 
 def render_post(p, out):
-    W, H = 1080, 1350; im = canvas(W, H); d = ImageDraw.Draw(im)
+    W, H = 1080, 1350; im = canvas(W, H, p.get("bg")); d = ImageDraw.Draw(im)
     d.text((70, 90), p.get("kicker", ""), font=font("Medium", 44), fill=MUTED)
     y = 135
     for line in p["title"][:2]:
@@ -126,7 +153,7 @@ def render_post(p, out):
 
 
 def render_story(s, path):
-    W, H = 1080, 1920; im = canvas(W, H); d = ImageDraw.Draw(im)
+    W, H = 1080, 1920; im = canvas(W, H, s.get("bg")); d = ImageDraw.Draw(im)
     paste_logo(im, LOGO_MARK, 200, W / 2, 230)
     center(d, 360, s.get("kicker", ""), font("Medium", 38), grad(0.1), W)
     y = 560
@@ -155,8 +182,11 @@ def render_story(s, path):
     footer(im, W, H); im.save(path, quality=95)
 
 
-def reel_frame(sc, end=False):
-    W, H = 1080, 1920; im = canvas(W, H); d = ImageDraw.Draw(im)
+def reel_frame(sc, end=False, overlay=False):
+    """overlay=True draws the text on a transparent shaded layer to put over a video clip."""
+    W, H = 1080, 1920
+    im = shade(W, H, 0.45) if overlay else canvas(W, H, sc.get("bg"))
+    d = ImageDraw.Draw(im)
     if end:
         paste_logo(im, LOGO_FULL, 700, W / 2, 760)
         center(d, 1180, sc.get("kicker", ""), fit(d, sc.get("kicker", ""), "Bold", 50, 940, 30), grad(0.2), W)
@@ -209,28 +239,39 @@ def render_reel(r, out, spec=None):
     tmp = os.path.join(out, "_reel"); os.makedirs(tmp, exist_ok=True)
     scenes = r["scenes"][:8]
     for i, sc in enumerate(scenes): sc["_t"] = i / max(1, len(scenes) - 1)
-    frames = [reel_frame(sc) for sc in scenes] + [reel_frame(r["end"], end=True)]
-    for i, fr in enumerate(frames): fr.save(os.path.join(tmp, f"s{i}.png"))
+    allsc = scenes + [r["end"]]
     dur, fade, last_extra = 2.3, 0.4, 1.2
-    inputs, fc = [], []
-    for i in range(len(frames)):
-        n = int((dur + (last_extra if i == len(frames) - 1 else 0)) * 30)
-        inputs += ["-i", os.path.join(tmp, f"s{i}.png")]
-        fc.append(f"[{i}:v]scale=1188:2112,zoompan=z='min(1+0.0015*on,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
-                  f":d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{i}]")
-    total = (dur - fade) * (len(frames) - 1) + dur + last_extra
+    inputs, fc, idx = [], [], 0
+    for i, sc in enumerate(allsc):
+        end = i == len(allsc) - 1
+        d = dur + (last_extra if end else 0); n = int(d * 30)
+        clip = None if end else resolve(sc.get("clip"))
+        if clip:
+            reel_frame(sc, overlay=True).save(os.path.join(tmp, f"o{i}.png"))
+            start = float(sc.get("clip_start", 0))
+            inputs += ["-ss", str(start), "-t", str(d), "-i", clip, "-loop", "1", "-t", str(d), "-i", os.path.join(tmp, f"o{i}.png")]
+            fc.append(f"[{idx}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,"
+                      f"trim=duration={d},setpts=PTS-STARTPTS[c{i}];[{idx + 1}:v]fps=30,format=rgba[ov{i}];"
+                      f"[c{i}][ov{i}]overlay=0:0:shortest=1,format=yuv420p,setsar=1[v{i}]")
+            idx += 2
+        else:
+            reel_frame(sc, end=end).save(os.path.join(tmp, f"s{i}.png"))
+            inputs += ["-i", os.path.join(tmp, f"s{i}.png")]
+            fc.append(f"[{idx}:v]scale=1188:2112,zoompan=z='min(1+0.0015*on,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+                      f":d={n}:s=1080x1920:fps=30,format=yuv420p,setsar=1[v{i}]")
+            idx += 1
+    total = (dur - fade) * (len(allsc) - 1) + dur + last_extra
     wav = music_track(out, "reel", total, spec or {})
     prev, offset = "v0", dur - fade
-    for i in range(1, len(frames)):
+    for i in range(1, len(allsc)):
         fc.append(f"[{prev}][v{i}]xfade=transition=fade:duration={fade}:offset={offset:.2f}[x{i}]")
         prev = f"x{i}"; offset += dur - fade
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + inputs + [
-        "-i", wav,
-        "-filter_complex", ";".join(fc), "-map", f"[{prev}]", "-map", f"{len(frames)}:a", "-shortest",
-        "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-b:v", "2500k",
-        "-maxrate", "3000k", "-bufsize", "6000k", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + inputs + ["-i", wav,
+        "-filter_complex", ";".join(fc), "-map", f"[{prev}]", "-map", f"{idx}:a", "-shortest",
+        "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", "30", "-b:v", "3500k",
+        "-maxrate", "4500k", "-bufsize", "9000k", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
         os.path.join(out, "reel.mp4")], check=True)
-    frames[-1].convert("RGB").save(os.path.join(out, "reel_cover.jpg"), quality=92)
+    reel_frame(r["end"], end=True).convert("RGB").save(os.path.join(out, "reel_cover.jpg"), quality=92)
     os.remove(wav)
     for f in os.listdir(tmp): os.remove(os.path.join(tmp, f))
     os.rmdir(tmp)
