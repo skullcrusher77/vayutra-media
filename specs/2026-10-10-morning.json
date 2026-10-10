@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-10-morning", "reel": "tropical", "stories": ["cinematic"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Surf in", "Odisha?"], "small": "Yes, on a student trip", "scene": "surf"},
+      {"kicker": "DAY 4: KONARK COAST", "big": ["Surf.", "Paddle."], "small": "Surfing and SUP with instructors", "scene": "beach"},
+      {"kicker": "SAFETY FIRST", "big": ["Ocean", "briefing"], "small": "Before anyone hits the water", "scene": "surf"},
+      {"kicker": "THEN", "big": ["Forest", "hike"], "small": "Coastal trail near the Sun Temple zone", "scene": "wheel"},
+      {"kicker": "TO END THE DAY", "big": ["Sunset", "circle"], "small": "Reflection with the group", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM us \"SURF\""}
+  },
+  "stories": [
+    {"kicker": "QUICK QUESTION", "big": ["Ever tried", "surfing?"], "accent": "Day 4 of the Odisha Experience",
+     "body": "Surfing and stand-up paddle on the Konark coast, with instructors and all gear included.",
+     "cta": "DM us \"SURF\"", "scene": "beach"}
+  ]
+}
