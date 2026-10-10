@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-10-evening", "reel": "lofi", "stories": ["acoustic"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "AGE 10 AND UP?", "big": ["Your first", "wave waits"], "small": "Day 4 on the Konark coast", "scene": "surf"},
+      {"kicker": "NO EXPERIENCE NEEDED", "big": ["Learn", "from pros"], "small": "Certified instructors, all gear included", "scene": "beach"},
+      {"kicker": "PARENTS, RELAX", "big": ["Safety", "first"], "small": "Ocean briefing and 24x7 supervision", "scene": "lake"},
+      {"kicker": "WHAT YOU TAKE HOME", "big": ["Balance.", "Confidence."], "small": "And a sunset reflection circle", "scene": "sunrise"},
+      {"kicker": "SCHOOLS AND STUDENTS", "big": ["Book", "direct"], "small": "6 days / 5 nights in Odisha", "scene": "wheel"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM us \"SURF\""}
+  },
+  "post": {
+    "kicker": "DAY 4: KONARK COAST",
+    "title": ["Surf. Paddle.", "Grow."],
+    "subtitle": "The Odisha Experience / Age 10+",
+    "items": [
+      ["01", "Ocean safety briefing", "Before anyone enters the water"],
+      ["02", "Surfing", "With certified instructors"],
+      ["03", "Stand-up paddle", "SUP board and safety gear included"],
+      ["04", "Coastal forest hike", "Near the Sun Temple zone"],
+      ["05", "Sunset reflection circle", "Talk about the day together"]
+    ],
+    "scene": "beach"
+  },
+  "stories": [
+    {"kicker": "READY FOR DAY 4?", "big": ["Catch your", "first wave"], "accent": "The Odisha Experience / Age 10+",
+     "body": "Surfing and SUP on the Konark coast with certified instructors. Direct booking open.",
+     "cta": "DM us \"SURF\"", "scene": "surf"}
+  ]
+}
