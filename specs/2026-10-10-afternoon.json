@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-10-afternoon", "reel": "upbeat", "stories": ["chill"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DAY 4, KONARK COAST", "big": ["What you", "actually do"], "small": "Konark Coastal Adventure Day", "scene": "temple"},
+      {"kicker": "FIRST", "big": ["Safety", "briefing"], "small": "Ocean safety before the water", "scene": "night"},
+      {"kicker": "THEN", "big": ["Learn to", "surf"], "small": "With certified instructors", "scene": "lake"},
+      {"kicker": "NEXT", "big": ["Stand-up", "paddle"], "small": "Board and safety gear included", "scene": "oldtown"},
+      {"kicker": "AFTER THAT", "big": ["Coastal", "forest hike"], "small": "Near the Sun Temple zone", "scene": "cycle"},
+      {"kicker": "SUNSET", "big": ["Reflection", "circle"], "small": "Talk about the day together", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM us \"SURF\""}
+  },
+  "stories": [
+    {"kicker": "DAY 4 FACT", "big": ["Gear", "included"], "accent": "Konark Coastal Adventure Day",
+     "body": "Surfing and SUP equipment, safety gear and certified instructors are all part of the program.",
+     "cta": "Link in bio", "scene": "temple"}
+  ]
+}
