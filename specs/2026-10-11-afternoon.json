@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-11-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DAY 5 KA PLAN", "big": ["Chilika pe", "kya karoge?"], "small": "Odisha Experience, Day 5", "scene": "sunrise"},
+      {"kicker": "STEP 1", "big": ["Boat ride", "on Chilika"], "small": "Seasonal boat ride on the lake", "scene": "sunrise"},
+      {"kicker": "STEP 2", "big": ["Lake ka", "ecosystem"], "small": "Ecosystem learning, live", "scene": "night"},
+      {"kicker": "STEP 3", "big": ["Teamwork", "challenges"], "small": "Group mein jeeto, saath seekho", "scene": "cycle"},
+      {"kicker": "DAY KHATAM?", "big": ["Group", "discussion"], "small": "Kya seekha? Share karo", "scene": "night"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "DAY 5 FACT", "big": ["Chilika", "Lake day"], "accent": "Odisha Experience, Day 5",
+     "bullets": ["Seasonal boat ride", "Ecosystem learning", "Teamwork challenges"],
+     "cta": "DM karo \"ODISHA\"", "scene": "sunrise"}
+  ]
+}
