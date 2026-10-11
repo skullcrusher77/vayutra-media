@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-11-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Chilika pe", "CLASS?!"], "small": "Haan, lake hi classroom hai", "scene": "lake"},
+      {"kicker": "DAY 5: CHILIKA LAKE", "big": ["Boat ride", "time!"], "small": "Seasonal boat ride on the lake", "scene": "lake"},
+      {"kicker": "TEXTBOOK NAHI", "big": ["Live", "ecosystem"], "small": "Ecosystem learning on the spot", "scene": "beach"},
+      {"kicker": "PHIR", "big": ["Team", "challenges"], "small": "Saath milke jeeto", "scene": "campfire"},
+      {"kicker": "6 DAYS IN ODISHA", "big": ["Ready", "ho?"], "small": "Age 10+ / 6 days, 5 nights", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK SAWAAL", "big": ["Chilika", "dekha hai?"], "accent": "Day 5 of the Odisha Experience",
+     "body": "Boat ride, ecosystem learning aur teamwork challenges, sab ek din mein.",
+     "cta": "DM karo \"ODISHA\"", "scene": "lake"}
+  ]
+}
