@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-11-evening", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SCHOOL TRIP YA ADVENTURE?", "big": ["Chilika", "bula raha!"], "small": "Day 5 of the Odisha Experience", "scene": "lake"},
+      {"kicker": "KISKE LIYE?", "big": ["Age 10+", "students"], "small": "Schools, colleges, student groups", "scene": "wheel"},
+      {"kicker": "SAB INCLUDED", "big": ["Stay, meals,", "transport"], "small": "Plus certified instructors", "scene": "oldtown"},
+      {"kicker": "PARENTS, CHILL", "big": ["24x7", "supervision"], "small": "Verified stays, regular updates", "scene": "temple"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Direct", "booking"], "small": "vayutra.in/odisha-experience", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "DAY 5: CHILIKA LAKE",
+    "title": ["Lake pe", "seekho!"],
+    "subtitle": "The Odisha Experience / Age 10+",
+    "items": [
+      ["01", "Seasonal boat ride", "Chilika Lake pe"],
+      ["02", "Ecosystem learning", "Textbook se bahar, live"],
+      ["03", "Teamwork challenges", "Squad ke saath jeeto"],
+      ["04", "Sab included", "Stay, meals, transport, instructors"],
+      ["05", "Direct booking", "DM karo \"ODISHA\""]
+    ],
+    "scene": "lake"
+  },
+  "stories": [
+    {"kicker": "CHILIKA CALLING", "big": ["Tum ready", "ho?"], "accent": "Odisha Experience / Age 10+",
+     "body": "6 days, 5 nights. Boat ride, ecosystem learning aur teamwork. Direct booking open.",
+     "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+  ]
+}
