@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-12-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Cycle pe", "HISTORY?!"], "small": "Old Town Bhubaneswar, Day 2", "scene": "cycle"},
+      {"kicker": "DAY 2: OLD TOWN", "big": ["Heritage", "cycle ride"], "small": "Guided ride through the old town", "scene": "oldtown"},
+      {"kicker": "TEXTBOOK NAHI", "big": ["Temple", "architecture"], "small": "Dekho, samjho, live", "scene": "temple"},
+      {"kicker": "PHIR", "big": ["Reflection", "session"], "small": "Jo seekha, uspe baat", "scene": "sunrise"},
+      {"kicker": "6 DAYS IN ODISHA", "big": ["Ready", "ho?"], "small": "Age 10+ / 6 days, 5 nights", "scene": "oldtown"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK SAWAAL", "big": ["Cycle pe", "heritage walk?"], "accent": "Day 2 of the Odisha Experience",
+     "body": "Old Town Bhubaneswar mein guided cycle ride, temple architecture aur reflection session.",
+     "cta": "DM karo \"ODISHA\"", "scene": "cycle"}
+  ]
+}
