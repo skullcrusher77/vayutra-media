@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-12-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DAY 2 KA PLAN", "big": ["Cycle pe", "HERITAGE?!"], "small": "Odisha Experience, Day 2", "scene": "wheel"},
+      {"kicker": "STEP 1", "big": ["Guided", "cycle ride"], "small": "Old Town Bhubaneswar ki galiyan", "scene": "night"},
+      {"kicker": "STEP 2", "big": ["Temples", "up close"], "small": "Temple architecture, live dekho", "scene": "wheel"},
+      {"kicker": "STEP 3", "big": ["Reflection", "session"], "small": "Jo dekha, uspe group baat", "scene": "campfire"},
+      {"kicker": "AUR DAY 1?", "big": ["Heritage", "walk"], "small": "Plus team activities", "scene": "night"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "DAY 2 FACT", "big": ["Old Town", "on cycle"], "accent": "Odisha Experience, Day 2",
+     "bullets": ["Guided heritage cycle ride", "Temple architecture", "Reflection session"],
+     "cta": "DM karo \"ODISHA\"", "scene": "night"}
+  ]
+}
