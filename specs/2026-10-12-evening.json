@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-12-evening", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "BORING TRIP? NAHI!", "big": ["Cycle pe", "HISTORY?!"], "small": "Old Town Bhubaneswar, Day 2", "scene": "oldtown"},
+      {"kicker": "KISKE LIYE?", "big": ["Age 10+", "students"], "small": "Schools aur student groups", "scene": "cycle"},
+      {"kicker": "SAB INCLUDED", "big": ["Stay, meals,", "transport"], "small": "Plus certified instructors", "scene": "temple"},
+      {"kicker": "PARENTS, CHILL", "big": ["24x7", "supervision"], "small": "Verified stays, regular updates", "scene": "lake"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Direct", "booking"], "small": "vayutra.in/odisha-experience", "scene": "oldtown"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "DAY 2: OLD TOWN BHUBANESWAR",
+    "title": ["Cycle pe", "heritage!"],
+    "subtitle": "The Odisha Experience / Age 10+",
+    "items": [
+      ["01", "Heritage cycle ride", "Guided, Old Town ki galiyan"],
+      ["02", "Temple architecture", "Live dekho, up close"],
+      ["03", "Reflection session", "Jo dekha, uspe group baat"],
+      ["04", "Sab included", "Stay, meals, transport, instructors"],
+      ["05", "Direct booking", "DM karo \"ODISHA\""]
+    ],
+    "scene": "cycle"
+  },
+  "stories": [
+    {"kicker": "CYCLE SQUAD READY?", "big": ["Tum aa", "rahe ho?"], "accent": "Odisha Experience / Age 10+",
+     "body": "6 days, 5 nights. Heritage cycle ride, temples aur reflection. Direct booking open.",
+     "cta": "DM karo \"ODISHA\"", "scene": "temple"}
+  ]
+}
