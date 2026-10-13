@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-13-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DAY 3 + DAY 4", "big": ["Konark mein", "kya karte?"], "small": "Odisha Experience ka coast", "scene": "sunrise"},
+      {"kicker": "DAY 3", "big": ["Konark", "to Puri"], "small": "Sun Temple, coast, beach", "scene": "night"},
+      {"kicker": "DAY 4", "big": ["Surfing", "+ SUP"], "small": "Certified instructors ke saath", "scene": "surf"},
+      {"kicker": "PHIR", "big": ["Forest", "hike"], "small": "Sun Temple zone ke paas", "scene": "sunrise"},
+      {"kicker": "SHAAM KO", "big": ["Sunset", "circle"], "small": "Reflection, squad ke saath", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "KONARK FACT", "big": ["Temple ke", "baad surf!"], "accent": "Odisha Experience, Day 3 + 4",
+     "bullets": ["Konark Sun Temple", "Surfing with instructors", "Coastal forest hike"],
+     "cta": "DM karo \"ODISHA\"", "scene": "surf"}
+  ]
+}
