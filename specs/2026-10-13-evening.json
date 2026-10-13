@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-13-evening", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SCHOOL TRIP? NAHI!", "big": ["Sun Temple", "LIVE?!"], "small": "Konark to Puri, Day 3", "scene": "wheel"},
+      {"kicker": "KISKE LIYE?", "big": ["Age 10+", "students"], "small": "Schools aur student groups", "scene": "temple"},
+      {"kicker": "SAB INCLUDED", "big": ["Stay, meals,", "transport"], "small": "Plus surfing aur SUP gear", "scene": "surf"},
+      {"kicker": "PARENTS, CHILL", "big": ["24x7", "supervision"], "small": "Verified stays, regular updates", "scene": "sunrise"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Direct", "booking"], "small": "vayutra.in/odisha-experience", "scene": "beach"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "DAY 3: KONARK TO PURI",
+    "title": ["Sun Temple", "se samundar!"],
+    "subtitle": "The Odisha Experience / Age 10+",
+    "items": [
+      ["01", "Konark Sun Temple", "Textbook se bahar, live"],
+      ["02", "Coastal exploration", "Konark se Puri tak"],
+      ["03", "Beach activities", "Squad ke saath masti"],
+      ["04", "Sab included", "Stay, meals, transport, instructors"],
+      ["05", "Direct booking", "DM karo \"ODISHA\""]
+    ],
+    "scene": "temple"
+  },
+  "stories": [
+    {"kicker": "KONARK BULA RAHA HAI", "big": ["Tum aa", "rahe ho?"], "accent": "Odisha Experience / Age 10+",
+     "body": "6 days, 5 nights. Sun Temple, coast aur Puri beach. Direct booking open.",
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
