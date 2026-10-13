@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-13-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "QUICK SAWAAL", "big": ["Sun Temple", "LIVE?!"], "small": "Konark, Day 3", "scene": "temple"},
+      {"kicker": "DAY 3", "big": ["Konark", "to Puri"], "small": "Ek din, do jagah", "scene": "wheel"},
+      {"kicker": "PEHLE", "big": ["Sun Temple", "visit"], "small": "Textbook se bahar, live", "scene": "temple"},
+      {"kicker": "PHIR", "big": ["Coastal", "exploration"], "small": "Samundar ke saath", "scene": "beach"},
+      {"kicker": "AUR", "big": ["Beach", "activities"], "small": "Squad ke saath masti", "scene": "beach"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Sun Temple", "dekha hai?"], "accent": "Day 3 of the Odisha Experience",
+     "body": "Konark Sun Temple, coastal exploration aur Puri ke beach activities.",
+     "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+  ]
+}
