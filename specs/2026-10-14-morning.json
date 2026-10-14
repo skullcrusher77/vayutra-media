@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-14-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "PARENTS, SUNO", "big": ["Bachcha", "SAFE hai?"], "small": "Odisha trip pe tension?", "scene": "beach"},
+      {"kicker": "DID YOU KNOW", "big": ["24x7", "supervision"], "small": "Har din, har jagah", "scene": "lake"},
+      {"kicker": "STAY", "big": ["Verified", "stays"], "small": "Verified locations bhi", "scene": "beach"},
+      {"kicker": "SURF DAY", "big": ["Certified", "instructors"], "small": "Plus safety gear", "scene": "surf"},
+      {"kicker": "PEHLE", "big": ["Ocean safety", "briefing"], "small": "Paani se pehle", "scene": "beach"},
+      {"kicker": "PARENTS KE LIYE", "big": ["Regular", "updates"], "small": "Emergency contact access", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Trip pe", "kya pucchoge?"], "accent": "Parents, aapka sawaal kya hai?",
+     "body": "24x7 supervision, verified stays, parent orientation aur regular updates.",
+     "cta": "DM karo \"ODISHA\"", "scene": "lake"}
+  ]
+}
