@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-14-evening", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "PARENTS PUCHTE HAIN", "big": ["Safe hai", "na?!"], "small": "Jawab: haan, full plan ke saath", "scene": "night"},
+      {"kicker": "24x7", "big": ["Supervision", "har din"], "small": "Certified instructors + supervisors", "scene": "campfire"},
+      {"kicker": "VERIFIED", "big": ["Stays aur", "locations"], "small": "Emergency contact access", "scene": "lake"},
+      {"kicker": "PARENTS KE LIYE", "big": ["Regular", "updates"], "small": "Plus parent orientation", "scene": "sunrise"},
+      {"kicker": "AGE 10+", "big": ["Ab bas", "DM karo!"], "small": "vayutra.in/odisha-experience", "scene": "beach"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "PARENTS, YE PADHO",
+    "title": ["Safety pehle,", "masti baad mein"],
+    "subtitle": "The Odisha Experience / Age 10+",
+    "items": [
+      ["01", "24x7 supervision", "Certified instructors aur supervisors"],
+      ["02", "Verified stays", "Verified locations bhi"],
+      ["03", "Emergency contact", "Hamesha access mein"],
+      ["04", "Regular updates", "Parents ko, poore trip mein"],
+      ["05", "Safety gear", "Surf ke pehle ocean safety briefing"]
+    ],
+    "scene": "wheel"
+  },
+  "stories": [
+    {"kicker": "PARENTS, READY?", "big": ["Safe trip,", "big memories"], "accent": "Odisha Experience / Age 10+",
+     "body": "24x7 supervision, verified stays, regular updates. Direct booking open.",
+     "cta": "DM karo \"ODISHA\"", "scene": "lake"}
+  ]
+}
