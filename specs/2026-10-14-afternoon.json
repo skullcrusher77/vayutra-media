@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-14-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "PARENTS, DEKHO", "big": ["6 din mein", "kya hota hai?"], "small": "Safe, supervised, full masti", "scene": "oldtown"},
+      {"kicker": "DAY 1", "big": ["Orientation", "+ heritage walk"], "small": "Bhubaneswar se start", "scene": "temple"},
+      {"kicker": "DAY 2", "big": ["Cycle ride", "Old Town"], "small": "Guided, group ke saath", "scene": "cycle"},
+      {"kicker": "DAY 4", "big": ["Safety briefing", "phir surf"], "small": "Instructors + safety gear", "scene": "sunrise"},
+      {"kicker": "HAR RAAT", "big": ["24x7", "supervision"], "small": "Verified stays only", "scene": "night"},
+      {"kicker": "TEAM TIME", "big": ["Teamwork", "challenges"], "small": "Leadership bhi seekho", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "SAFETY FACT", "big": ["Parents ke", "liye bhi!"], "accent": "Trip se pehle, trip ke dauraan",
+     "bullets": ["Parent orientation", "Emergency contact access", "Regular updates"],
+     "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+  ]
+}
