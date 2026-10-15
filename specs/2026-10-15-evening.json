@@ -1,0 +1,31 @@
+{
+ "music": {"seed": "2026-10-15-evening", "reel": "indian", "stories": ["indian"]},
+ "reel": {
+  "scenes": [
+   {"kicker": "BOOK KAISE KAREIN?", "big": ["Bas ek", "DM door!"], "small": "The Odisha Experience", "scene": "surf"},
+   {"kicker": "DIRECT BOOKING", "big": ["Seedha", "humse book"], "small": "Schools, colleges, student groups", "scene": "beach"},
+   {"kicker": "AGE 10+", "big": ["6 din,", "5 raatein"], "small": "Bhubaneswar to Chilika", "scene": "lake"},
+   {"kicker": "SAB INCLUDED", "big": ["Stay, meals,", "surf gear"], "small": "Transport + instructors bhi", "scene": "campfire"},
+   {"kicker": "PARENTS RELAX", "big": ["24x7", "supervision"], "small": "Regular updates to parents", "scene": "sunrise"}
+  ],
+  "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+ },
+ "post": {
+  "kicker": "BOOKING SIMPLE HAI",
+  "title": ["Sab included,", "bas DM karo"],
+  "subtitle": "The Odisha Experience / 6 days / Age 10+",
+  "items": [
+   ["01", "Stay + all meals", "Accommodation sorted"],
+   ["02", "Surf + SUP gear", "Safety gear bhi"],
+   ["03", "Certified team", "Instructors aur supervisors"],
+   ["04", "Local transport", "Learning materials bhi"],
+   ["05", "Direct booking", "DM, ya WhatsApp 9090011077"]
+  ],
+  "scene": "temple"
+ },
+ "stories": [
+  {"kicker": "READY HO?", "big": ["Odisha", "bulaa raha!"], "accent": "6 days / 5 nights, age 10+",
+   "bullets": ["Direct booking", "Sab kuch included", "24x7 supervision"],
+   "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+ ]
+}
