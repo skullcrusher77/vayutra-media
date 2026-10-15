@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-15-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Sab kuch", "INCLUDED?"], "small": "6 din ka Odisha trip", "scene": "beach"},
+      {"kicker": "RAHNA + KHANA", "big": ["Stay +", "all meals"], "small": "Accommodation aur saare meals", "scene": "campfire"},
+      {"kicker": "SURF DAY", "big": ["Surf + SUP", "gear"], "small": "Safety gear bhi included", "scene": "surf"},
+      {"kicker": "SAATH MEIN", "big": ["Certified", "instructors"], "small": "Aur supervisors", "scene": "beach"},
+      {"kicker": "GHOOMNA", "big": ["Local", "transport"], "small": "Plus learning materials", "scene": "lake"},
+      {"kicker": "BOOKING?", "big": ["Direct", "booking"], "small": "vayutra.in/odisha-experience", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Trip mein", "kya included?"], "accent": "Guess karo, phir DM karo!",
+     "body": "Stay, all meals, instructors, surf + SUP gear, safety gear, local transport.",
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
