@@ -1,0 +1,80 @@
+{
+ "music": {
+  "seed": "2026-10-15-afternoon",
+  "reel": "indian",
+  "stories": [
+   "indian"
+  ]
+ },
+ "reel": {
+  "scenes": [
+   {
+    "kicker": "6 DIN, SAB INCLUDED",
+    "big": [
+     "Andar kya",
+     "milta hai?"
+    ],
+    "small": "Dekho students kya karte hain",
+    "scene": "oldtown"
+   },
+   {
+    "kicker": "DAY 2",
+    "big": [
+     "Heritage",
+     "cycle ride"
+    ],
+    "small": "Old Town Bhubaneswar",
+    "scene": "cycle"
+   },
+   {
+    "kicker": "DAY 3",
+    "big": [
+     "Konark Sun",
+     "Temple"
+    ],
+    "small": "Phir Puri ka beach",
+    "scene": "wheel"
+   },
+   {
+    "kicker": "DAY 4",
+    "big": [
+     "Surf, SUP +",
+     "forest hike"
+    ],
+    "small": "Gear + instructors included",
+    "scene": "temple"
+   },
+   {
+    "kicker": "HAR SHAAM",
+    "big": [
+     "Reflection",
+     "circle"
+    ],
+    "small": "24x7 supervision",
+    "scene": "night"
+   }
+  ],
+  "end": {
+   "kicker": "THE ODISHA EXPERIENCE",
+   "small": "6 days / 5 nights / Age 10+",
+   "cta": "DM karo \"ODISHA\""
+  }
+ },
+ "stories": [
+  {
+   "kicker": "FACT",
+   "big": [
+    "Stay + meals",
+    "included!"
+   ],
+   "accent": "6 days / 5 nights, age 10+",
+   "bullets": [
+    "Accommodation",
+    "All meals",
+    "Local transport"
+   ],
+   "cta": "DM karo \"ODISHA\"",
+   "scene": "night"
+  }
+ ]
+}
