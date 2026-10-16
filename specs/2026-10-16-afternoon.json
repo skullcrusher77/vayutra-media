@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-16-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "6 DIN KA PLAN", "big": ["Leader kaise", "BANTE HAIN?"], "small": "Dekho students kya karte hain", "scene": "oldtown"},
+      {"kicker": "DAY 2", "big": ["Group cycle", "ride"], "small": "Old Town Bhubaneswar", "scene": "oldtown"},
+      {"kicker": "DAY 3", "big": ["Konark Sun", "Temple"], "small": "Phir coastal exploration", "scene": "temple"},
+      {"kicker": "DAY 4", "big": ["Surf + SUP", "saath mein"], "small": "Instructors ke saath", "scene": "surf"},
+      {"kicker": "DAY 4 KI SHAAM", "big": ["Sunset", "reflection"], "small": "Circle mein baat-cheet", "scene": "beach"},
+      {"kicker": "HAR DIN", "big": ["Group", "discussions"], "small": "Leadership challenges bhi", "scene": "night"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT", "big": ["Sunset", "reflection circle"], "accent": "Day 4, Konark coast",
+     "body": "Surfing + SUP ke baad, team ke saath reflection.",
+     "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+  ]
+}
