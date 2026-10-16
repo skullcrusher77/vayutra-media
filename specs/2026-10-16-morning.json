@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-16-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Trip se", "LEADER?"], "small": "Haan, 6 din mein!", "scene": "campfire"},
+      {"kicker": "DAY 1", "big": ["Team", "activities"], "small": "Bhubaneswar se shuruaat", "scene": "cycle"},
+      {"kicker": "HAR DIN", "big": ["Leadership", "challenges"], "small": "Group discussions bhi", "scene": "campfire"},
+      {"kicker": "DAY 5, CHILIKA", "big": ["Teamwork", "challenges"], "small": "Lake pe, saath mein", "scene": "lake"},
+      {"kicker": "GHAR LAOGE", "big": ["Confidence", "+ teamwork"], "small": "Aur personal growth", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Tum team ke", "LEADER ho?"], "accent": "Ya leader banna hai?",
+     "body": "Odisha Experience: leadership + teamwork challenges, 6 din.",
+     "cta": "DM karo \"ODISHA\"", "scene": "campfire"}
+  ]
+}
