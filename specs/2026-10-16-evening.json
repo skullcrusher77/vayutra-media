@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-16-evening", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "READY HO?", "big": ["Leader", "BANOGE?"], "small": "Toh Odisha chalo!", "scene": "campfire"},
+      {"kicker": "KYUN JOIN KAREIN?", "big": ["Leadership", "+ teamwork"], "small": "Roz naye challenges", "scene": "cycle"},
+      {"kicker": "GHAR LAOGE", "big": ["Confidence", "+ balance"], "small": "Aur personal growth", "scene": "surf"},
+      {"kicker": "KISKE LIYE?", "big": ["Age 10+", "students"], "small": "Schools, colleges, groups", "scene": "temple"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Direct", "booking"], "small": "Seedha humse, ek DM mein", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "TRIP NAHI, TRAINING",
+    "title": ["Leader bano,", "Odisha mein"],
+    "subtitle": "The Odisha Experience / 6 days / Age 10+",
+    "items": [
+      ["01", "Leadership challenges", "Har din, team ke saath"],
+      ["02", "Group discussions", "Apni baat rakhna seekho"],
+      ["03", "Chilika teamwork", "Day 5, lake pe challenges"],
+      ["04", "Reflection circles", "Sunset aur sunrise pe"],
+      ["05", "Book directly", "DM ya WhatsApp 9090011077"]
+    ],
+    "scene": "sunrise"
+  },
+  "stories": [
+    {"kicker": "AAJ KA SAWAAL", "big": ["Team leader", "banna hai?"], "accent": "6 days / 5 nights, age 10+",
+     "bullets": ["Leadership challenges", "Teamwork at Chilika", "Direct booking"],
+     "cta": "DM karo \"ODISHA\"", "scene": "night"}
+  ]
+}
