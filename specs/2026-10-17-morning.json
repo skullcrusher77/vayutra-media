@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-17-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SACH BATAO", "big": ["Boring trip", "PHIR SE?"], "small": "Bus, selfie, ghar wapas?", "scene": "night"},
+      {"kicker": "IS BAAR NAHI", "big": ["Odisha mein", "SURFING!"], "small": "Day 4, instructors ke saath", "scene": "surf"},
+      {"kicker": "EXAMS KE BAAD", "big": ["Cycle ride,", "Old Town"], "small": "Heritage, temples, masti", "scene": "cycle"},
+      {"kicker": "CHILIKA LAKE", "big": ["Boat ride", "+ teamwork"], "small": "Day 5, saath mein", "scene": "lake"},
+      {"kicker": "6 DIN BAAD", "big": ["Holiday =", "level up"], "small": "Confidence + teamwork", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Boring trip", "ya SURF trip?"], "accent": "Tum kaunsa choose karoge?",
+     "body": "Odisha Experience: surfing, SUP, Chilika boat ride. 6 din.",
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
