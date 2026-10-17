@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-17-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "HOLIDAY PLAN?", "big": ["Sirf PHONE", "scroll?"], "small": "Ya Odisha mein 6 din?", "scene": "campfire"},
+      {"kicker": "DAY 1", "big": ["Heritage", "walk"], "small": "Bhubaneswar + team activities", "scene": "oldtown"},
+      {"kicker": "DAY 2", "big": ["Temple", "architecture"], "small": "Old Town, cycle ride pe", "scene": "oldtown"},
+      {"kicker": "DAY 3", "big": ["Konark Sun", "Temple"], "small": "Phir beach activities", "scene": "temple"},
+      {"kicker": "DAY 4", "big": ["Coastal", "forest hike"], "small": "Sun Temple zone ke paas", "scene": "wheel"},
+      {"kicker": "DAY 6", "big": ["Reflection", "+ feedback"], "small": "Phir ghar wapas, level up", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT", "big": ["Konark Sun", "Temple"], "accent": "Day 3: Konark to Puri",
+     "body": "Sun Temple, coastal exploration aur beach activities. Ek hi din mein!",
+     "cta": "DM karo \"ODISHA\"", "scene": "temple"}
+  ]
+}
