@@ -1,0 +1,32 @@
+{
+  "music": {"seed": "2026-10-17-evening", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "EXAMS KHATAM?", "big": ["Ab kya,", "SIRF NETFLIX?"], "small": "Is holiday kuch alag karo", "scene": "night"},
+      {"kicker": "KYUN JOIN KAREIN?", "big": ["Surfing", "+ SUP"], "small": "Certified instructors ke saath", "scene": "surf"},
+      {"kicker": "TENSION FREE", "big": ["Stay + meals", "included"], "small": "Gear, transport, sab sorted", "scene": "beach"},
+      {"kicker": "PARENTS KHUSH", "big": ["24x7", "supervision"], "small": "Regular updates ghar pe", "scene": "lake"},
+      {"kicker": "KISKE LIYE?", "big": ["Age 10+", "students"], "small": "Schools aur student groups", "scene": "sunrise"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Direct", "booking"], "small": "Bas ek DM door", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "HOLIDAY UPGRADE",
+    "title": ["Netflix chhodo,", "Odisha chalo"],
+    "subtitle": "The Odisha Experience / 6 days / Age 10+",
+    "items": [
+      ["01", "Surfing + SUP", "Day 4, instructors ke saath"],
+      ["02", "Chilika boat ride", "Day 5, seasonal boat ride"],
+      ["03", "Old Town cycle ride", "Day 2, heritage + temples"],
+      ["04", "Sab included", "Stay, meals, gear, transport"],
+      ["05", "Book directly", "DM ya WhatsApp 9090011077"]
+    ],
+    "scene": "wheel"
+  },
+  "stories": [
+    {"kicker": "AB BAHANA NAHI", "big": ["Boring holiday?", "CANCEL!"], "accent": "6 days / 5 nights, age 10+",
+     "bullets": ["Surfing + SUP", "Chilika boat ride", "Direct booking"],
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
