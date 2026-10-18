@@ -1,0 +1,32 @@
+{
+  "music": {"seed": "2026-10-18-evening", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "AGE 10+ HO?", "big": ["Yeh trip", "TUMHARE LIYE!"], "small": "The Odisha Experience", "scene": "sunrise"},
+      {"kicker": "KISKE LIYE?", "big": ["Schools +", "colleges"], "small": "Student groups bhi welcome", "scene": "cycle"},
+      {"kicker": "KYUN JOIN KAREIN?", "big": ["Confidence", "+ teamwork"], "small": "Leadership challenges", "scene": "campfire"},
+      {"kicker": "PARENTS KHUSH", "big": ["24x7", "supervision"], "small": "Verified stays, regular updates", "scene": "lake"},
+      {"kicker": "SAB INCLUDED", "big": ["Stay, meals,", "surf gear"], "small": "Transport bhi sorted", "scene": "surf"},
+      {"kicker": "DIRECT BOOKING", "big": ["Bas ek", "DM door"], "small": "WhatsApp 9090011077", "scene": "temple"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "KISKE LIYE?",
+    "title": ["Age 10+?", "Odisha chalo!"],
+    "subtitle": "The Odisha Experience / 6 days / 5 nights",
+    "items": [
+      ["01", "Age 10+ students", "Akele nahi, group ke saath"],
+      ["02", "Schools + colleges", "Poori class ek saath"],
+      ["03", "Student bodies", "Clubs aur student groups"],
+      ["04", "Parents relaxed", "24x7 supervision, updates"],
+      ["05", "Direct booking", "DM ya WhatsApp 9090011077"]
+    ],
+    "scene": "beach"
+  },
+  "stories": [
+    {"kicker": "AB TUMHARI BAARI", "big": ["Age 10+?", "Book karo!"], "accent": "Schools, colleges, student groups",
+     "bullets": ["6 days / 5 nights", "Surfing + SUP", "Direct booking"],
+     "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+  ]
+}
