@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-18-morning", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Age 10+?", "Tum READY?"], "small": "Odisha Experience tumhare liye", "scene": "beach"},
+      {"kicker": "SCHOOLS + COLLEGES", "big": ["Poori class", "saath mein"], "small": "Student groups welcome", "scene": "temple"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Surf, SUP,", "Chilika"], "small": "Konark se Puri tak", "scene": "lake"},
+      {"kicker": "DIRECT BOOKING", "big": ["Seedha", "book karo"], "small": "DM ya WhatsApp 9090011077", "scene": "cycle"},
+      {"kicker": "TUMHARA TURN", "big": ["Explore.", "Engage. Evolve."], "small": "Confidence + teamwork", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Tum 10+ ho?", "Toh chalo!"], "accent": "Class ke saath ya dosto ke saath?",
+     "body": "Schools, colleges, student groups: sab ke liye. Direct booking.",
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
