@@ -1,0 +1,31 @@
+{
+  "music": {"seed": "2026-10-19-evening", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SUNRISE + DIARY", "big": ["Ready ho", "TUM?"], "small": "The Odisha Experience", "scene": "sunrise"},
+      {"kicker": "KYUN JOIN KAREIN?", "big": ["Khud ko", "jaano"], "small": "Beach sunrise journaling", "scene": "beach"},
+      {"kicker": "DAY 4 KI SHAAM", "big": ["Surf, phir", "sunset circle"], "small": "Reflection with your group", "scene": "surf"},
+      {"kicker": "OUTCOME", "big": ["Confidence +", "growth"], "small": "Leadership aur teamwork bhi", "scene": "campfire"},
+      {"kicker": "KISKE LIYE?", "big": ["Age 10+", "students"], "small": "Schools, colleges, student groups", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {
+    "kicker": "SUNRISE SESSIONS",
+    "title": ["Likho, socho,", "grow karo"],
+    "subtitle": "The Odisha Experience / 6 days / 5 nights / Age 10+",
+    "items": [
+      ["01", "Beach sunrise", "Reflection journaling"],
+      ["02", "Day 2 reflection", "Old Town cycle ride ke baad"],
+      ["03", "Day 4 sunset circle", "Surfing + SUP ke baad"],
+      ["04", "Group discussions", "Apni baat share karo"],
+      ["05", "Day 6 wrap-up", "Reflection + feedback"]
+    ],
+    "scene": "sunrise"
+  },
+  "stories": [
+    {"kicker": "AB TUMHARI BAARI", "big": ["Sunrise", "miss mat karo"], "accent": "Beach sunrise + reflection journaling",
+     "bullets": ["6 days / 5 nights", "Age 10+", "Direct booking"],
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
