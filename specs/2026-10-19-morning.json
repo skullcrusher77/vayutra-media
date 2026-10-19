@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-19-morning", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Beach pe", "SUNRISE diary?"], "small": "Odisha Experience mein haan!", "scene": "sunrise"},
+      {"kicker": "SUBAH KA PLAN", "big": ["Sunrise", "session"], "small": "Beach pe, dosto ke saath", "scene": "beach"},
+      {"kicker": "PEN + PAPER", "big": ["Likho apni", "story"], "small": "Reflection journaling", "scene": "sunrise"},
+      {"kicker": "DAY 4 KI SHAAM", "big": ["Sunset", "circle"], "small": "Surf ke baad reflection", "scene": "surf"},
+      {"kicker": "OUTCOME", "big": ["Confidence +", "growth"], "small": "6 days / 5 nights / Age 10+", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Sunrise ya", "snooze?"], "accent": "Beach pe sunrise journaling, try karoge?",
+     "body": "Odisha Experience: sunrise sessions + reflection journaling. Age 10+.",
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
