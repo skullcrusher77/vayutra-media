@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-19-afternoon", "reel": "indian", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "6 DIN KA SAFAR", "big": ["Trip pe", "DIARY?!"], "small": "Har din likho, har din seekho", "scene": "temple"},
+      {"kicker": "DAY 2", "big": ["Cycle ride,", "phir reflect"], "small": "Old Town ke baad reflection session", "scene": "cycle"},
+      {"kicker": "DAY 3", "big": ["Sun Temple", "dekho"], "small": "Konark se Puri tak", "scene": "wheel"},
+      {"kicker": "DAY 5", "big": ["Chilika", "boat ride"], "small": "Ecosystem learning + teamwork", "scene": "lake"},
+      {"kicker": "GROUP TIME", "big": ["Share karo", "apni baat"], "small": "Group discussions, sab saath", "scene": "oldtown"},
+      {"kicker": "DAY 6", "big": ["Reflection", "+ wrap-up"], "small": "Confidence le ke ghar wapas", "scene": "night"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT", "big": ["Day 2:", "Reflect bhi"], "accent": "Old Town Bhubaneswar",
+     "body": "Heritage cycle ride, temple architecture, phir reflection session.",
+     "cta": "DM karo \"ODISHA\"", "scene": "oldtown"}
+  ]
+}
