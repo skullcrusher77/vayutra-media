@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-20-afternoon", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DUSSEHRA SPECIAL", "big": ["6 din,", "6 jeet!"], "small": "Har din ek naya darr khatam", "scene": "oldtown"},
+      {"kicker": "DAY 2", "big": ["Cycle pe", "Old Town"], "small": "Heritage ride + temple architecture", "scene": "cycle"},
+      {"kicker": "DAY 3", "big": ["Sun Temple", "Konark"], "small": "Phir coast pe Puri tak", "scene": "wheel"},
+      {"kicker": "DAY 4", "big": ["Surf + SUP", "+ hike"], "small": "Coastal forest hike, Sun Temple zone", "scene": "sunrise"},
+      {"kicker": "DAY 5", "big": ["Chilika", "boat ride"], "small": "Ecosystem learning + teamwork", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT", "big": ["Day 4:", "Courage day"], "accent": "Konark Coastal Adventure Day",
+     "body": "Surfing with instructors, SUP, ocean safety briefing, sunset reflection circle.",
+     "cta": "DM karo \"ODISHA\"", "scene": "lake"}
+  ]
+}
