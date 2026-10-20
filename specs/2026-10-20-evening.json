@@ -1,0 +1,24 @@
+{
+  "music": {"seed": "2026-10-20-evening", "reel": "festive", "stories": ["indian"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "HAPPY DUSSEHRA", "big": ["Is saal", "darr haarega!"], "small": "Courage wala trip, Odisha mein", "scene": "night"},
+      {"kicker": "KAUN JA SAKTA HAI?", "big": ["Age 10+"], "small": "Schools, colleges, student groups", "scene": "temple"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Surf, SUP,", "Chilika"], "small": "Konark, Puri, Bhubaneswar bhi", "scene": "beach"},
+      {"kicker": "PARENTS RELAX", "big": ["24x7", "supervision"], "small": "Verified stays, regular updates", "scene": "campfire"},
+      {"kicker": "SAB INCLUDED", "big": ["Stay, meals,", "gear"], "small": "Certified instructors saath", "scene": "wheel"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {"kicker": "HAPPY DUSSEHRA", "title": ["Darr jalao,", "Odisha chalo"], "subtitle": "6 days / 5 nights / Age 10+",
+    "items": [["01", "Konark coast", "Surfing + SUP with instructors"],
+              ["02", "Sun Temple", "Konark to Puri coastal day"],
+              ["03", "Chilika Lake", "Boat ride + teamwork challenges"],
+              ["04", "Safety first", "24x7 supervision, verified stays"]],
+    "scene": "night"},
+  "stories": [
+    {"kicker": "DUSSEHRA CTA", "big": ["Ready for", "courage?"], "accent": "The Odisha Experience",
+     "body": "6 days, age 10+. Direct booking online.",
+     "cta": "DM karo \"ODISHA\"", "scene": "campfire"}
+  ]
+}
