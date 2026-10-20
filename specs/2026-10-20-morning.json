@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-20-morning", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "HAPPY DUSSEHRA", "big": ["Darr ko", "jalaoge?"], "small": "Is baar fears ka Ravan dahan!", "scene": "night"},
+      {"kicker": "DID YOU KNOW?", "big": ["Odisha mein", "SURFING?"], "small": "Konark coast, Day 4", "scene": "surf"},
+      {"kicker": "PEHLI BAAR?", "big": ["No tension"], "small": "Certified instructors saath", "scene": "beach"},
+      {"kicker": "SUP + SAFETY", "big": ["Paddle on", "the sea"], "small": "Ocean safety briefing pehle", "scene": "beach"},
+      {"kicker": "SHAAM KO", "big": ["Sunset", "circle"], "small": "Courage ki baatein", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "DUSSEHRA POLL", "big": ["Kaunsa darr", "jalaoge?"], "accent": "Waves ka? Stage ka? New dosto ka?",
+     "body": "Odisha Experience: surfing, SUP, teamwork challenges. Age 10+.",
+     "cta": "DM karo \"ODISHA\"", "scene": "temple"}
+  ]
+}
