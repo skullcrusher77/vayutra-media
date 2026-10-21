@@ -1,0 +1,25 @@
+{
+  "music": {"seed": "2026-10-21-evening", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SCHOOL TRIP YA...", "big": ["LIFE-CHANGING", "trip?"], "small": "Odisha bula raha hai", "scene": "surf"},
+      {"kicker": "TRIP SE PEHLE", "big": ["Sab ready", "milega"], "small": "Itinerary, packing list, fitness tips", "scene": "sunrise"},
+      {"kicker": "PARENTS RELAX", "big": ["24x7", "supervision"], "small": "Parent orientation bhi pehle", "scene": "lake"},
+      {"kicker": "AGE 10+", "big": ["6 din", "5 raatein"], "small": "Bhubaneswar, Konark, Puri, Chilika", "scene": "temple"},
+      {"kicker": "DIRECT BOOKING", "big": ["Ab bas", "DM karo!"], "small": "Full itinerary website pe", "scene": "beach"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {"kicker": "TRIP SE PEHLE", "title": ["Tension zero,", "sab ready"], "subtitle": "The Odisha Experience / 6 days / Age 10+",
+    "items": [["01", "Itinerary", "Day-by-day detailed plan"],
+              ["02", "Packing list", "Kya le jaana hai, sab clear"],
+              ["03", "Fitness tips", "Surf aur SUP ke liye ready"],
+              ["04", "Safety briefing", "Trip se pehle hi"],
+              ["05", "Parent orientation", "Mummy-papa bhi relaxed"]],
+    "scene": "oldtown"},
+  "stories": [
+    {"kicker": "READY HO?", "big": ["Bag pack,", "DM karo!"], "accent": "Odisha wait kar raha hai",
+     "body": "Itinerary, packing list, safety briefing: sab trip se pehle. Age 10+, direct booking.",
+     "cta": "DM karo \"ODISHA\"", "scene": "wheel"}
+  ]
+}
