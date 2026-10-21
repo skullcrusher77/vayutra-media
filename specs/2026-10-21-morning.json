@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-21-morning", "reel": "indian", "stories": ["cinematic"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "TRIP SE PEHLE", "big": ["Packing ka", "TENSION?"], "small": "Kya le jaayein, kya nahi?", "scene": "beach"},
+      {"kicker": "DID YOU KNOW?", "big": ["Packing list", "milti hai"], "small": "Vayutra bhejta hai, pehle hi", "scene": "sunrise"},
+      {"kicker": "PLUS", "big": ["Full", "itinerary"], "small": "Day-by-day plan, detailed", "scene": "oldtown"},
+      {"kicker": "FIT RAHO", "big": ["Fitness", "guidelines"], "small": "Surf aur SUP ke liye ready", "scene": "surf"},
+      {"kicker": "PARENTS KE LIYE", "big": ["Parent", "orientation"], "small": "Safety briefing bhi pehle", "scene": "lake"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Packing mein", "kaun pro?"], "accent": "Tum ya mummy?",
+     "body": "Odisha Experience: packing list, itinerary, fitness guidelines sab pehle milta hai.",
+     "cta": "DM karo \"ODISHA\"", "scene": "sunrise"}
+  ]
+}
