@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-21-afternoon", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "BAG READY?", "big": ["6 din ka", "ADVENTURE!"], "small": "Dekho bag kahan kahan jaayega", "scene": "cycle"},
+      {"kicker": "DAY 2", "big": ["Heritage", "cycle ride"], "small": "Old Town Bhubaneswar, guided", "scene": "cycle"},
+      {"kicker": "DAY 3", "big": ["Konark", "Sun Temple"], "small": "Phir coast aur beach activities", "scene": "wheel"},
+      {"kicker": "DAY 4", "big": ["Surfing", "+ SUP"], "small": "Gear aur instructors included", "scene": "temple"},
+      {"kicker": "DAY 4 SHAAM", "big": ["Sunset", "circle"], "small": "Forest hike ke baad reflection", "scene": "campfire"},
+      {"kicker": "DAY 5", "big": ["Chilika", "boat ride"], "small": "Teamwork challenges bhi", "scene": "night"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT", "big": ["Surf gear?", "Tension nahi"], "accent": "Sab included hai",
+     "body": "Surfing aur SUP equipment, safety gear, stay, meals, local transport: sab Vayutra ka.",
+     "cta": "DM karo \"ODISHA\"", "scene": "campfire"}
+  ]
+}
