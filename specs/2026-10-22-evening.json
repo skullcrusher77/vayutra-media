@@ -1,0 +1,25 @@
+{
+  "music": {"seed": "2026-10-22-evening", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SAWAAL HAI?", "big": ["Odisha mein", "SURFING?"], "small": "Haan, Day 4 pe!", "scene": "surf"},
+      {"kicker": "KITNE DIN?", "big": ["6 din", "5 raatein"], "small": "Bhubaneswar, Konark, Puri, Chilika", "scene": "wheel"},
+      {"kicker": "KAUN AA SAKTA?", "big": ["Age 10+", "students"], "small": "Schools aur student groups bhi", "scene": "lake"},
+      {"kicker": "SHURU KAHAN?", "big": ["Bhubaneswar", "Day 1"], "small": "Arrival, orientation, heritage walk", "scene": "oldtown"},
+      {"kicker": "BOOKING?", "big": ["Direct", "booking!"], "small": "Price aur dates? Bas DM karo", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "vayutra.in/odisha-experience", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {"kicker": "FAQ", "title": ["Aapke sawaal,", "hamare jawaab"], "subtitle": "The Odisha Experience / vayutra.in",
+    "items": [["01", "Kitne din?", "6 days / 5 nights"],
+              ["02", "Age?", "10+ students welcome"],
+              ["03", "Start kahan?", "Bhubaneswar se, Day 1"],
+              ["04", "Kahan jaayenge?", "Konark, Puri, Chilika Lake"],
+              ["05", "Booking?", "Direct booking, DM karo"]],
+    "scene": "beach"},
+  "stories": [
+    {"kicker": "AUR SAWAAL?", "big": ["Price, dates?", "DM karo!"], "accent": "Hum jawaab denge",
+     "body": "6 days / 5 nights, age 10+, Bhubaneswar se shuru. Baaki sab DM mein.",
+     "cta": "DM karo \"ODISHA\"", "scene": "campfire"}
+  ]
+}
