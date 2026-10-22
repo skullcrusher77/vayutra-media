@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-22-morning", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "FAQ TIME", "big": ["Kitne din", "ka trip?"], "small": "Sabse common sawaal", "scene": "beach"},
+      {"kicker": "DID YOU KNOW?", "big": ["6 days", "5 nights"], "small": "Poora Odisha, ek trip mein", "scene": "temple"},
+      {"kicker": "AGE?", "big": ["Age 10+", "welcome"], "small": "Students aur school groups", "scene": "cycle"},
+      {"kicker": "START KAHAN SE?", "big": ["Bhubaneswar", "se shuru"], "small": "Day 1: arrival + heritage walk", "scene": "oldtown"},
+      {"kicker": "PHIR?", "big": ["Konark, Puri", "Chilika"], "small": "Surf, SUP, boat ride", "scene": "surf"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK QUIZ", "big": ["Trip kahan", "se shuru?"], "accent": "Puri ya Bhubaneswar?",
+     "body": "Answer: Bhubaneswar! Day 1 mein arrival, orientation aur heritage walk.",
+     "cta": "DM karo \"ODISHA\"", "scene": "sunrise"}
+  ]
+}
