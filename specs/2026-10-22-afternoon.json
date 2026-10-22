@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-22-afternoon", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "6 DIN MEIN KYA?", "big": ["Itna kuch", "ek trip mein?"], "small": "Dekho din-ba-din", "scene": "night"},
+      {"kicker": "DAY 1-2", "big": ["Bhubaneswar", "heritage"], "small": "Heritage walk + cycle ride", "scene": "campfire"},
+      {"kicker": "DAY 3", "big": ["Konark", "Sun Temple"], "small": "Phir coast aur beach activities", "scene": "wheel"},
+      {"kicker": "DAY 4", "big": ["Surfing", "+ SUP!"], "small": "Instructors ke saath, ocean pe", "scene": "night"},
+      {"kicker": "DAY 5", "big": ["Chilika", "boat ride"], "small": "Ecosystem learning + teamwork", "scene": "lake"},
+      {"kicker": "DAY 6", "big": ["Reflection", "+ wrap-up"], "small": "Ghar wapas, naye confidence ke saath", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT", "big": ["Day 5:", "Chilika Lake"], "accent": "Boat ride + teamwork",
+     "body": "Ecosystem learning, seasonal boat ride aur teamwork challenges: sab ek din mein.",
+     "cta": "DM karo \"ODISHA\"", "scene": "lake"}
+  ]
+}
