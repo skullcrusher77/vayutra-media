@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-23-afternoon", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "CLASS TRIP, NEXT LEVEL", "big": ["Odisha mein", "SURFING?"], "small": "6 din, poori class saath", "scene": "sunrise"},
+      {"kicker": "DAY 2: OLD TOWN", "big": ["Heritage", "cycle ride"], "small": "Temple architecture live", "scene": "cycle"},
+      {"kicker": "DAY 3: KONARK", "big": ["Sun Temple", "dekho"], "small": "Phir Puri beach activities", "scene": "wheel"},
+      {"kicker": "DAY 4: COAST", "big": ["Surf + SUP"], "small": "Instructors ke saath", "scene": "sunrise"},
+      {"kicker": "DAY 4 EVENING", "big": ["Sunset", "reflection"], "small": "Poori class ek circle mein", "scene": "night"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "Schools / student groups / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "FACT CHECK", "big": ["Sab included"], "accent": "Class trip, zero tension",
+     "bullets": ["Stay + all meals", "Surf + SUP gear", "Certified instructors", "Local transport"],
+     "cta": "DM karo \"ODISHA\"", "scene": "cycle"}
+  ]
+}
