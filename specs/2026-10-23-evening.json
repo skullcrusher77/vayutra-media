@@ -1,0 +1,25 @@
+{
+  "music": {"seed": "2026-10-23-evening", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "TEACHERS, SUNO!", "big": ["Class trip", "PLAN karo?"], "small": "Odisha Experience ready hai", "scene": "surf"},
+      {"kicker": "6 DAYS / 5 NIGHTS", "big": ["Konark, Puri,", "Chilika"], "small": "Bhubaneswar se shuru", "scene": "lake"},
+      {"kicker": "SAB INCLUDED", "big": ["Stay + meals", "+ transport"], "small": "Surf + SUP gear bhi", "scene": "beach"},
+      {"kicker": "PARENTS RELAX", "big": ["24x7", "supervision"], "small": "Regular updates to parents", "scene": "temple"},
+      {"kicker": "STUDENTS GROW", "big": ["Leadership +", "teamwork"], "small": "Confidence bhi, fun bhi", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "Schools / student groups / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {"kicker": "SCHOOLS", "title": ["Class trip?", "Odisha chalo!"], "subtitle": "The Odisha Experience / vayutra.in",
+    "items": [["01", "Kaun?", "Schools + student groups, 10+"],
+              ["02", "Kitne din?", "6 days / 5 nights"],
+              ["03", "Kya included?", "Stay, meals, transport, gear"],
+              ["04", "Safety?", "24x7 supervision, verified stays"],
+              ["05", "Booking?", "Direct booking, DM karo"]],
+    "scene": "temple"},
+  "stories": [
+    {"kicker": "TEACHERS + PRINCIPALS", "big": ["Apni class", "le aao!"], "accent": "Schools ke liye perfect",
+     "bullets": ["Parent orientation", "Detailed itinerary", "Packing list", "Safety briefing"],
+     "cta": "DM karo \"ODISHA\"", "scene": "lake"}
+  ]
+}
