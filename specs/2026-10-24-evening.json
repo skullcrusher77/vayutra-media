@@ -1,0 +1,25 @@
+{
+  "music": {"seed": "2026-10-24-evening", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SCHOOL TRIP YA...", "big": ["Life-changing", "TRIP?"], "small": "6 din ka Odisha Experience", "scene": "beach"},
+      {"kicker": "KYUN JOIN KARO?", "big": ["Surf, SUP,", "Sun Temple"], "small": "Konark, Puri, Chilika, Bhubaneswar", "scene": "surf"},
+      {"kicker": "TUM BANOGE", "big": ["Confident +", "leader"], "small": "Teamwork aur personal growth", "scene": "campfire"},
+      {"kicker": "PARENTS RELAX", "big": ["24x7", "supervision"], "small": "Verified stays, regular updates", "scene": "lake"},
+      {"kicker": "KAUN AA SAKTA?", "big": ["Age 10+", "students"], "small": "Schools + student groups bhi", "scene": "temple"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Direct booking", "cta": "DM karo \"ODISHA\""}
+  },
+  "post": {"kicker": "6 DAYS / 5 NIGHTS", "title": ["Poora Odisha,", "ek trip mein!"], "subtitle": "The Odisha Experience / vayutra.in",
+    "items": [["01", "Day 1-2", "Bhubaneswar + Old Town cycle ride"],
+              ["02", "Day 3", "Konark Sun Temple to Puri"],
+              ["03", "Day 4", "Surfing + SUP, Konark coast"],
+              ["04", "Day 5", "Chilika Lake boat ride"],
+              ["05", "Day 6", "Reflection + departure"]],
+    "scene": "wheel"},
+  "stories": [
+    {"kicker": "AB TUMHARI BAARI", "big": ["Odisha", "chaloge?"], "accent": "Age 10+ / 6 days / 5 nights",
+     "bullets": ["Surfing + SUP", "Sun Temple", "Chilika boat ride", "24x7 supervision"],
+     "cta": "DM karo \"ODISHA\"", "scene": "sunrise"}
+  ]
+}
