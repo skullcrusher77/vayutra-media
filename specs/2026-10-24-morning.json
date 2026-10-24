@@ -1,0 +1,19 @@
+{
+  "music": {"seed": "2026-10-24-morning", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "SOCHO ZARA", "big": ["6 din mein", "kitna Odisha?"], "small": "Answer: poora Odisha!", "scene": "sunrise"},
+      {"kicker": "DAY 1-2", "big": ["Bhubaneswar", "on cycle"], "small": "Heritage walk + Old Town ride", "scene": "cycle"},
+      {"kicker": "DAY 3", "big": ["Sun Temple", "to Puri"], "small": "Konark + beach activities", "scene": "wheel"},
+      {"kicker": "DAY 4", "big": ["SURFING", "+ SUP"], "small": "Konark coast, with instructors", "scene": "surf"},
+      {"kicker": "DAY 5", "big": ["Chilika", "boat ride"], "small": "Ecosystem + teamwork", "scene": "lake"},
+      {"kicker": "DAY 6", "big": ["Reflect.", "Evolve."], "small": "Wrap-up aur departure", "scene": "campfire"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK QUESTION", "big": ["6 din,", "5 jagah?"], "accent": "Kaunsa day sabse best?",
+     "body": "Bhubaneswar, Old Town, Konark, Puri, Chilika. Surfing se sunset reflection tak.",
+     "cta": "DM karo \"ODISHA\"", "scene": "beach"}
+  ]
+}
