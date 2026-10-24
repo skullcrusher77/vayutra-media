@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-24-afternoon", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "6 DIN KA PLAN", "big": ["Odisha mein", "SURFING?"], "small": "Haan, Day 4 pe!", "scene": "night"},
+      {"kicker": "DAY 1-2", "big": ["Temple", "architecture"], "small": "Heritage walk + reflection session", "scene": "oldtown"},
+      {"kicker": "DAY 3", "big": ["Konark", "Sun Temple"], "small": "Phir coastal exploration", "scene": "temple"},
+      {"kicker": "DAY 4", "big": ["Surf + SUP", "+ forest hike"], "small": "Ocean safety briefing pehle", "scene": "night"},
+      {"kicker": "DAY 5-6", "big": ["Teamwork", "challenges"], "small": "Chilika, phir reflection", "scene": "oldtown"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "DID YOU KNOW", "big": ["Surfing gear", "included!"], "accent": "Plus SUP aur safety gear",
+     "body": "Certified instructors, stay, all meals, local transport. Sab included.",
+     "cta": "DM karo \"ODISHA\"", "scene": "temple"}
+  ]
+}
