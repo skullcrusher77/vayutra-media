@@ -1,0 +1,18 @@
+{
+  "music": {"seed": "2026-10-25-morning", "reel": "indian", "stories": ["festive"]},
+  "reel": {
+    "scenes": [
+      {"kicker": "DID YOU KNOW?", "big": ["Odisha mein", "SURFING?"], "small": "Haan, Konark coast pe!", "scene": "surf"},
+      {"kicker": "DAY 4", "big": ["Coastal", "Adventure Day"], "small": "Konark, Odisha Experience", "scene": "beach"},
+      {"kicker": "WAVES PE", "big": ["Surfing", "+ SUP"], "small": "Certified instructors ke saath", "scene": "surf"},
+      {"kicker": "SAFETY FIRST", "big": ["Ocean safety", "briefing"], "small": "Gear included", "scene": "beach"},
+      {"kicker": "PHIR", "big": ["Forest hike", "+ sunset"], "small": "Sun Temple zone ke paas", "scene": "sunrise"}
+    ],
+    "end": {"kicker": "THE ODISHA EXPERIENCE", "small": "6 days / 5 nights / Age 10+", "cta": "DM karo \"ODISHA\""}
+  },
+  "stories": [
+    {"kicker": "QUICK POLL", "big": ["Surfing", "try karoge?"], "accent": "Haan ya HAAN?",
+     "body": "Day 4: Konark coast pe surfing aur SUP, instructors ke saath.",
+     "cta": "DM karo \"ODISHA\"", "scene": "surf"}
+  ]
+}
