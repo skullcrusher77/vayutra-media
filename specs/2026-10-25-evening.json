@@ -1,0 +1,111 @@
+{
+  "music": {
+    "seed": "2026-10-25-evening",
+    "reel": "indian",
+    "stories": [
+      "festive"
+    ]
+  },
+  "reel": {
+    "scenes": [
+      {
+        "kicker": "STUDENTS, SUNO!",
+        "big": [
+          "Odisha mein",
+          "SURFING?"
+        ],
+        "small": "Konark Coastal Adventure Day",
+        "scene": "surf"
+      },
+      {
+        "kicker": "KYUN JOIN KARO?",
+        "big": [
+          "Confidence",
+          "+ balance"
+        ],
+        "small": "Waves pe seekho",
+        "scene": "beach"
+      },
+      {
+        "kicker": "KISKE LIYE?",
+        "big": [
+          "Age 10+",
+          "students"
+        ],
+        "small": "Schools aur student groups",
+        "scene": "lake"
+      },
+      {
+        "kicker": "SAB INCLUDED",
+        "big": [
+          "Surf + SUP",
+          "gear"
+        ],
+        "small": "Certified instructors + safety gear",
+        "scene": "surf"
+      },
+      {
+        "kicker": "AB BAS",
+        "big": [
+          "DM karo!"
+        ],
+        "small": "Direct booking available",
+        "scene": "sunrise"
+      }
+    ],
+    "end": {
+      "kicker": "THE ODISHA EXPERIENCE",
+      "small": "6 days / 5 nights / Age 10+",
+      "cta": "DM karo \"ODISHA\""
+    }
+  },
+  "post": {
+    "kicker": "DAY 4 / KONARK",
+    "title": [
+      "Surf. Paddle.",
+      "Grow."
+    ],
+    "subtitle": "Konark Coastal Adventure Day",
+    "items": [
+      [
+        "01",
+        "Surfing",
+        "With certified instructors"
+      ],
+      [
+        "02",
+        "SUP",
+        "Stand-up paddle"
+      ],
+      [
+        "03",
+        "Safety",
+        "Ocean safety briefing"
+      ],
+      [
+        "04",
+        "Hike",
+        "Coastal forest near Sun Temple"
+      ],
+      [
+        "05",
+        "Sunset",
+        "Reflection circle"
+      ]
+    ],
+    "scene": "beach"
+  },
+  "stories": [
+    {
+      "kicker": "READY HO?",
+      "big": [
+        "Waves bula",
+        "rahi hain!"
+      ],
+      "accent": "Age 10+ / 6 days",
+      "body": "Surfing + SUP, certified instructors ke saath. Price aur dates ke liye DM karo.",
+      "cta": "DM karo \"ODISHA\"",
+      "scene": "sunrise"
+    }
+  ]
+}
